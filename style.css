@@ -235,7 +235,7 @@ line-height :24px;
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-
+    height:100vh;
     margin:auto;
 }
 
@@ -318,11 +318,9 @@ opacity:1;
 .Card{
     border: 2px solid transparent;
     border-radius:8px;
-    width:32rem;
-    /* height: 20rem; */
-    margin:10px;
+    width:35%;
+    margin:20px 20px;
     background-color: #687076;
-    /* margin: 15px 60px; */
     
 }
 
@@ -331,12 +329,8 @@ opacity:1;
 
     .card-box{
         display:flex;
-        justify-content: space-between;
-        margin:80px
-        /* margin-right:80px;
-        margin-left: 80px;
-        margin-top:4px;
-        margin-bottom:4px; */
+        justify-content:center;
+        
     }
     
 
@@ -595,14 +589,14 @@ text-align: center;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.307);
     border:3px solid transparent;
     border-radius:5px;
-    margin:40px;
-    margin-left:20px;
-    width:50%;
+    margin:10px 10px;
+    width:40%;
     height:16rem;
     display:flex;
     justify-content:space-between;
     align-items: center;
     font-family: "Inter";
+background-color :rgb(255, 255, 255);
     border-bottom-color: rgb(236, 238, 240);
     
 }
@@ -610,16 +604,15 @@ text-align: center;
 
 .numbering{
     margin:25px;
+
     color :rgb(104, 112, 118);
     font-family: "slab-serif";
 }
 
-.project-1{
-margin:0px 25px;
-}
+
 
 .project-1 h2{
-    font-size:16px;
+    font-size:22px;
     font-weight: 500;
 
 
@@ -644,7 +637,9 @@ line-height :25.5px;
 
 .full{
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
+    gap:30px;
+    margin-bottom:30px;
     
 }
 
@@ -652,28 +647,33 @@ line-height :25.5px;
 .Questions h2{
     font-size: 64px;
     font-weight:500;
-    margin-top:4rem;
-    margin-bottom:px;
+    margin-top:8rem;
+    margin-bottom:8rem;
     margin-left:13rem;
     font-family: "lato";
 }
 
-.accordion-button {
+
+
+.accordion-button  {
     background-color: transparent; 
     color: inherit; 
-    font-weight: bold;
-    font-size:22px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight:500;
+    font-size:17px;
+    font-family:"Inter";
+    
 }
 
 .accordion-button:not(.collapsed) {
     background-color: transparent; 
     color: inherit; 
+    font-family: "Inter";
 }
 
 .accordion-button:focus {
     box-shadow: none; 
 }
+
 
 #faqAccordion .accordian{
 font-size :16px;
@@ -688,7 +688,7 @@ unicode-bidi :isolate;
 
 .accordian-item{
     align-items: center;
-    appearance: button;
+    /* appearance:button; */
     background-color: rgba(0, 0, 0, 0);
     border-bottom-color :rgb(33, 37, 41);
     border-bottom-left-radius :0px;
@@ -702,13 +702,10 @@ font-style :normal;
 font-weight:500px;
 padding:20px;
 
+
+
 }
 
-.accordion-body {
-    color: grey;
-font-size: 17px;
-font-family:  Helvetica, sans-serif;
-}
 
 .FAQ{
     margin:12rem;
