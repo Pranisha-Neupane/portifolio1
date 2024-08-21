@@ -186,6 +186,8 @@ margin-top: 3px;
 margin-bottom: 3px;
 color:rgb(104, 112, 118);
 text-align:center;
+
+/* please make sure this font exists */
 font-family:"Roberto" , sans-serif;
 font-size :20px;
 font-weight: 300;
@@ -267,6 +269,8 @@ line-height :24px;
    
     text-align:left;
     /* height:15em; */
+
+/*     //try to be consistent with which unit to use */
     margin-top: 130px;
     margin-left:4rem;
     
@@ -280,6 +284,8 @@ line-height :24px;
     /* font-weight: bolder; */
 
     color :rgb(17, 24, 28);
+
+/*      donot repeatedly give font-family to every element. it should take font from body and tags defined in top */
 font-family :"Inter", sans-serif;
 font-size :50px;
 font-weight :500;
@@ -416,6 +422,8 @@ margin-top:20px;
 margin-bottom:20px;
 /* height:33rem; */
 letter-spacing:-0.22px;
+
+/* explnation for this font-family required */
 font-family: "sans-serif", serif;
 font-size: 30px;
 font-weight :400;
@@ -456,6 +464,7 @@ margin-bottom: 50px;
     .Foott{ 
      
      /* font-size:18px; */
+/*     font family is not imported from google fonts */
      font-family: "poppins";
      line-height: 2.4px;
      padding:13px;
