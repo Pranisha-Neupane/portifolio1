@@ -60,8 +60,12 @@ nav {
   }
 
   
+ 
+
+
 .navbar{
     display:flex;
+    flex-wrap: wrap;
     justify-content:space-between;
     /* margin-top:1px; */
     margin-left:25px;
@@ -76,18 +80,36 @@ font-family: "Inter",sans-serif;
 
 }
 
-.navbar h4:hover{
-    border: 4px solid lightgrey;
-    border-radius: 12px;
-    /* color:transparent; */
-    color:black;
-    background-color:lightgrey;
-    /* position:relative; */
-    transition:smooth 0.3s ease;
+@media only screen and( min-width:655px) {
+    nav{
+        display:none;
+        padding:none;
+        margin:none;
+        height:100vh;
+        margin-left:none;
+    margin-right:none;
+    display: none;
+    justify-content: none;
+    }
+    .navbar h4{
+        font-size:9px;
+        margin:none;
+    }
+
+    .navbar .Request{
+        font-size:9px;
+    }
+
+    .navElements li{
+        padding:none;
+    }
 }
 
+
+
+
 .navElements{
-    height:50px;
+    height:40px;
     text-decoration: none;
     list-style-type: none;
 }
@@ -103,7 +125,7 @@ li{
     /* margin:10px; */
     padding:8px 14px;
     list-style-type: none;
-    /* font-size: 16px; */
+    font-size: 12px;
     color:#687076;
 }
     
@@ -335,28 +357,29 @@ opacity:1;
 
     .card-box{
         display:flex;
+        flex-wrap: wrap;
         justify-content:center;
+
         
     }
     
 
     .image{
+        padding-top:12px;
+        padding-right:20px;
+        padding-left:20px;
+        padding-bottom: none;
 border:2px solid transparent;
 border-radius: 8px;
 width:calc(50%-30px);
 height:15rem;
 transition:transform 0.3s ease;
+  }
 
-    }
-
-    /* .image:hover{
-        background: rgb(179,52,113);
-        background: linear-gradient(45deg, rgba(179,52,113,1) 0%, rgba(11,62,120,1) 0%, rgba(11,62,120,1) 0%, rgba(73,68,98,1) 4%, rgba(224,84,46,1) 44%, rgba(249,235,73,1) 96%, rgba(252,253,76,1) 100%);
-  color:white; } */
 
 .image img{
 width:100%;
-height: 15rem; 
+height: 14rem; 
 transition: transform 0.5s ease;
 border:1px solid transparent;
 border-radius: 8px;
@@ -364,7 +387,7 @@ border-radius: 8px;
 
 .image:hover img
 {
- transform: scale(1.02);
+ transform: scale(1.15);
 }
     
 
@@ -508,20 +531,23 @@ unicode-bidi :isolate;
     
 }
 
+@media (max){}
 .foot-grp1{
 /* background-color: black; */
-margin:8rem 0px;
+justify-content: center;
+   margin:8rem 0px;
+   padding:20px 6px;
    font-family:"Inter";
    font-size:40px;
-   margin-top:40px;
-   /* background: rgb(179,52,113);
-   background: linear-gradient(45deg, rgba(179,52,113,1) 0%, rgba(48,50,51,1) 0%, rgba(0,0,0,1) 30%, rgba(46,32,37,1) 44%, rgba(71,49,58,1) 61%, rgba(26,27,27,1) 82%); */
    background: rgb(179,52,113);
 background: linear-gradient(45deg, rgba(179,52,113,1) 0%, rgba(48,50,51,1) 0%, rgba(0,0,0,1) 20%, rgba(46,32,37,1) 30%, rgba(71,49,58,1) 50%, rgba(26,27,27,1) 71%);
 
 
 }
 
+/* .text{
+    padding:20rem 20rem;
+} */
 
 
 .foot-grp1 h2{
@@ -541,9 +567,7 @@ font-size: 60px;
     margin-bottom: 6rem;
 }
 
-.description{
-    margin-top: 6rem;
-}
+
 
 .logoo{
     display:flex;
@@ -558,24 +582,41 @@ object-fit: cover;
 
 .rounded{
     border: 1px solid ;
-    color :rgb(255, 255, 255);
+    color :grey;
 }
 
+
 .p-3 .rounded .text-center{
-display: flex;
-    padding: 8px;
+    display: flex;
+    padding: 12px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    
       
 }
 
-
-
-.p-3 .rounded .text-center p{
-font-size: 65px;
+.rounded p{
+    
+   color: rgb(155, 161, 166);
 }
+
+.d-flex .rounded{
+    background-color: black;
+}
+
+ .rounded  h5{
+font-size:36px;
+font-weight: 400;
+color: rgb(236, 237, 238);
+/* font-size:4 */
+}
+
+.rounded h4{
+  color:rgb(236, 237, 238);
+}
+
 
 
 .webflow h2{
@@ -591,9 +632,12 @@ text-align: center;
 }
 
 .h-sm-100 {
-    height:calc(100%+100px)
+    height:calc(60% + 100px);
+    background-color: black;
   }
+  
 
+   
 .Enrollment{
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.307);
     border:3px solid transparent;
@@ -653,12 +697,10 @@ line-height :25.5px;
 }
 
 
-.Questions h2{
-    font-size: 64px;
+.Questions h3{
+    font-size: 60px;
     font-weight:500;
-    margin-top:8rem;
-    margin-bottom:8rem;
-    margin-left:13rem;
+    margin:4rem 13rem; 
     font-family: "lato";
 }
 
@@ -669,7 +711,7 @@ line-height :25.5px;
     color: inherit; 
     font-weight:500;
     font-size:17px;
-    font-family:"Inter";
+    font-family:"lato";
     
 }
 
@@ -684,10 +726,10 @@ line-height :25.5px;
 }
 
 
-#faqAccordion .accordian{
+ .accordian-body{
 font-size :16px;
 height :590.125px;
-line-height: 19.2px;
+line-height: 16px;
 margin-left: 226px;
 margin-right: 226px;
 max-width: 748px;
@@ -697,24 +739,29 @@ unicode-bidi :isolate;
 
 .accordian-item{
     align-items: center;
-    /* appearance:button; */
+    appearance:button;
     background-color: rgba(0, 0, 0, 0);
-    border-bottom-color :rgb(33, 37, 41);
+    /* border-bottom-color :rgb(33, 37, 41);
     border-bottom-left-radius :0px;
     border-bottom-right-radius :0px;
-    border-bottom-style: none;
-    font-optical-sizing :auto;
+    border-bottom-style:none; */
+    font-optical-sizing :auto;    
 font-size: 22px;
 font-size-adjust: none;
 font-stretch :100%;
 font-style :normal;
 font-weight:500px;
 padding:20px;
-
-
-
+border:none;
 }
 
+/* problem with font color changed */
+
+.collapse {
+    color:grey;
+    font-size: 15px;
+    font-family: "Inter";
+}
 
 .FAQ{
     margin:12rem;
@@ -729,9 +776,10 @@ padding:20px;
 
     background-image: url("https://assets.website-files.com/6279077bf697b924fac6e205/62f3c2a8b9b8314b4a29fc04_bottom-bg.webp");
 
- width:95%;
+width:95%;
 height:80vh;
 text-align: center;
+
 
 }
 
@@ -808,7 +856,7 @@ box-shadow: #11181c;
     display: flex;
     justify-content:space-between;
     transition-duration: 0.2s;
-transition-property: box-shadow;
+transition-property:box-shadow;
 
 }
 
