@@ -14,7 +14,15 @@ body{
     color:black;
     background-color: whitesmoke;
   }
-  
+  h1, h2, h3, h4, h5, h5, h6 {
+    font-family: "Inter",sans-serif;
+  }
+
+  p, li {
+font-family:"poppins",sans-serif;
+  }
+
+
 
    /* primarily declared headings and paragraph */
 h1{
@@ -121,11 +129,12 @@ font-family: "Inter",sans-serif;
     list-style-type: none;
 }
 
-li{
+.navElements li a{
     /* margin:10px; */
     padding:8px 14px;
-    list-style-type: none;
+    /* list-style-type: none; */
     font-size: 12px;
+    /* text-decoration: none; */
     color:#687076;
 }
     
@@ -137,6 +146,8 @@ li:hover{
     background-color:lightgrey;
     position:relative;
     transition: smooth 0.3s ease;
+    /* list-style-type: none;
+    text-decoration: none; */
 }
 
  ul{
@@ -365,6 +376,7 @@ opacity:1;
     
 
     .image{
+        overflow: hidden;
         padding-top:12px;
         padding-right:20px;
         padding-left:20px;
