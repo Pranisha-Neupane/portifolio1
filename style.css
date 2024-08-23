@@ -14,42 +14,26 @@ body{
     color:black;
     background-color: whitesmoke;
   }
-  h1, h2, h3, h4, h5, h5, h6 {
-    font-family: "Inter",sans-serif;
-  }
-
-  p, li {
-font-family:"poppins",sans-serif;
-  }
-
-
-
+  
    /* primarily declared headings and paragraph */
-h1{
-    font-size: 3.986rem;
-}
-h2{
-    font-size: 2.488rem;
-}
-h3{
-    font-size: 1.074rem;
-}
-h4{
-    font-size: 1.728rem;
+h1 { font-size: 3.986rem; }
+h2 { font-size: 2.488rem; }
+h3 { font-size: 1.074rem; }
+h4 { font-size: 1.728rem; }
+h5 { font-size: 1.44rem; }
+h6 { font-size: 1rem; }
+p { font-size: 0.8rem; }
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Inter", sans-serif;
 }
 
-h5{
-    font-size: 1.44rem;
+p, li {
+    font-family: "Poppins", sans-serif;
 }
+  
 
-h6{
-    font-size: 1rem;
-}
-
-p{
-    font-size: 0.8rem;
-    
-}
 
 
 /* nav tag */
@@ -59,7 +43,6 @@ nav {
     left: 0;
     top: 0;
     right: 0;
-    /* bottom: auto; */
     z-index: 100;
     background-color: hsla(0, 0%, 100%, .7);
     -webkit-backdrop-filter:blur(12px);
@@ -75,7 +58,6 @@ nav {
     display:flex;
     flex-wrap: wrap;
     justify-content:space-between;
-    /* margin-top:1px; */
     margin-left:25px;
     margin-right:25px;
     border-bottom: 1px solid lightgray;   
@@ -124,8 +106,7 @@ font-family: "Inter",sans-serif;
 
 
 
-.navElements a{
-    text-decoration: none;
+.navElements ul {
     list-style-type: none;
 }
 
@@ -136,7 +117,9 @@ font-family: "Inter",sans-serif;
     font-size: 12px;
     /* text-decoration: none; */
     color:#687076;
+    text-decoration: none;
 }
+
     
 li:hover{
     border: 1px solid lightgrey;
@@ -174,9 +157,9 @@ li:hover{
     background-color: lightgrey;
 }
 
-.Text{
+/* .Text{
     height:100vh;
-}
+} */
 
 .Text1{
 
@@ -265,22 +248,20 @@ line-height :24px;
 }
 
 
-
+/* my Intro page with my image */
 .Intro_page{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    height:100vh;
+    /* height:100vh; */
     margin:auto;
 }
 
 .Intro_page img{
-    height:30rem;
+    /* height:30rem; */
     width:15rem;
-    margin-right:1rem;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin:1rem 1rem;
+
     vertical-align: middle;
     object-fit: cover;
   
@@ -335,10 +316,28 @@ margin-right: 60px;
    font-weight:500;
    font-size: 15px;
 font-style: normal;
-height:350px;
+/* height:350px; */
 opacity:1;
 }
 
+
+@media only screen and (max-width: 850px) {
+    .Intro_page img {
+
+        margin:none;
+        object-fit: cover;
+        
+    }
+
+    .image-gradient{
+       margin:30px 0;
+
+    }
+}
+
+
+
+/* next class i.e. Work assigned */
 .Work{
     margin-top:20px;
     margin-bottom:20px;
@@ -455,6 +454,7 @@ box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Adding shadow */
 width:30%;
 margin-top:20px;
 margin-bottom:20px;
+padding: 30px 30px;
 /* height:33rem; */
 letter-spacing:-0.22px;
 
@@ -498,13 +498,11 @@ margin-bottom: 50px;
 
     .Foott{ 
      
-     /* font-size:18px; */
-/*     font family is not imported from google fonts */
      font-family: "poppins";
      line-height: 2.4px;
-     padding:13px;
+     /* padding:13px;
      margin-left: 17px;
-     
+  */
     
     }
 
@@ -524,7 +522,7 @@ margin-bottom: 50px;
     font-size: 15px;
     /* font-family: "Inter"; */
 font-weight :500;
-height :22.2px;
+/* height :22.2px; */
 line-height :4px;
 text-size-adjust :100%;
 unicode-bidi :isolate;
@@ -543,7 +541,16 @@ unicode-bidi :isolate;
     
 }
 
-@media (max){}
+
+@media only screen and( min-width:7px){
+    .Questions h3 {
+        font-size:50px;
+        font-weight: 500;
+        margin: 4rem 13rem;
+        font-family: "lato";
+}
+}
+
 .foot-grp1{
 /* background-color: black; */
 justify-content: center;
@@ -584,12 +591,13 @@ font-size: 60px;
 .logoo{
     display:flex;
     justify-content:space-between;
+    padding:30px 30px;
 }
 
 .testimonial-logo{
-margin-top:2rem;
-margin-right:20px;
-object-fit: cover;
+/* margin-top:2rem;
+margin-right:20px; */
+/* object-fit: cover; */
 }
 
 .rounded{
@@ -639,12 +647,16 @@ text-align: center;
     font-family: "Lato";
 }
 
+.row{
+    align-items: stretch;
+}
+
 .col-6 .col-3{
     font-family: "Lato";
 }
 
 .h-sm-100 {
-    height:calc(60% + 100px);
+    height:calc(60% + 105px);
     background-color: black;
   }
   
@@ -656,10 +668,12 @@ text-align: center;
     border-radius:5px;
     margin:10px 10px;
     width:40%;
-    height:16rem;
+    /* height: 14rem; */
+    padding: 30px 30px;
+    overflow:hidden;
     display:flex;
-    justify-content:space-between;
-    align-items: center;
+    align-items: flex-start;
+    /* justify-content:safe; */
     font-family: "Inter";
 background-color :rgb(255, 255, 255);
     border-bottom-color: rgb(236, 238, 240);
@@ -668,8 +682,10 @@ background-color :rgb(255, 255, 255);
 
 
 .numbering{
-    margin:25px;
-
+    margin-top:25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    margin-left: none;
     color :rgb(104, 112, 118);
     font-family: "slab-serif";
 }
@@ -709,7 +725,7 @@ line-height :25.5px;
 }
 
 
-.Questions h3{
+.Questions h4{
     font-size: 60px;
     font-weight:500;
     margin:4rem 13rem; 
@@ -721,9 +737,10 @@ line-height :25.5px;
 .accordion-button  {
     background-color: transparent; 
     color: inherit; 
-    font-weight:500;
-    font-size:17px;
+    font-weight:600;
+    font-size:20px;
     font-family:"lato";
+    letter-spacing :-0.11px;
     
 }
 
@@ -738,47 +755,57 @@ line-height :25.5px;
 }
 
 
- .accordian-body{
-font-size :16px;
-height :590.125px;
-line-height: 16px;
-margin-left: 226px;
-margin-right: 226px;
+ .accordion-body{
+height :50px;
+/* line-height:20px; */
+/* margin-left: 226px;
+margin-right: 226px; */
 max-width: 748px;
-text-size-adjust :100%;
-unicode-bidi :isolate;
+/* text-size-adjust :100%; */
+color:gray !important;
+/* font-size: 16px; */
+font-family: sans-serif;
+letter-spacing: 0.17px;
+line-height: 23.375px;
+max-width: 650px;
+padding-bottom :12px;
+padding-top: 4px;
+/* font-weight: 150; */
+
+
 }
 
-.accordian-item{
+.accordion-item{
     align-items: center;
     appearance:button;
-    background-color: rgba(0, 0, 0, 0);
-    /* border-bottom-color :rgb(33, 37, 41);
+    /* background-color: rgba(0, 0, 0, 0); */
+    background-color: white;
+    padding:5px;
+
+     /* border-bottom-color :rgb(33, 37, 41);
     border-bottom-left-radius :0px;
     border-bottom-right-radius :0px;
-    border-bottom-style:none; */
-    font-optical-sizing :auto;    
-font-size: 22px;
-font-size-adjust: none;
+    border-bottom-style:none; 
+     font-optical-sizing :auto;     
+font-size: 22px; 
+ font-size-adjust: none;
 font-stretch :100%;
 font-style :normal;
-font-weight:500px;
-padding:20px;
-border:none;
+font-weight:500px; */
+
+border-top: none;
+border-left: none;
+border-right:none;
 }
 
-/* problem with font color changed */
 
-.collapse {
-    color:grey;
-    font-size: 15px;
-    font-family: "Inter";
-}
 
 .FAQ{
     margin:12rem;
     margin-top:50px;
 }
+
+
 
 .last-card{
     border:3px solid transparent;
@@ -789,7 +816,8 @@ border:none;
     background-image: url("https://assets.website-files.com/6279077bf697b924fac6e205/62f3c2a8b9b8314b4a29fc04_bottom-bg.webp");
 
 width:95%;
-height:80vh;
+padding:7rem 7rem;
+/* height:80vh; */
 text-align: center;
 
 
@@ -822,8 +850,6 @@ transition: opacity 2s ease-in-out;  */
 }
 
  .Text-form h2 {
-   margin-top: 10rem;
-    margin-bottom:0;
     font-size: 64px;
     font-weight:500px;
     color:white;
@@ -847,13 +873,14 @@ transition: opacity 2s ease-in-out;  */
     background-color:#f8f9fa;
     transition:box-shadow .2s;
     overflow: hidden;
-    padding: 0 0 0 50px;
+    /* padding:20px; */
 }
 
 .card22 img{
 
 width:9rem;
 height:9rem;
+object-fit: cover;
 border:1px solid transparent;
 border-radius:none;
 box-shadow: #11181c;   
@@ -861,7 +888,7 @@ box-shadow: #11181c;
 }
 
 .card-again{
-    margin-left:30px;
+    padding: 30px 30px;
 }
 
 .carddd{
@@ -897,6 +924,10 @@ padding:5px 10px;
     font-family: "slab-serif";
 }
 
+.right-footer ul {
+/* text-decoration:none; */
+list-style-type:none;
+}
 .right-footer a{
     padding:5px 10px; 
     text-decoration: none;
