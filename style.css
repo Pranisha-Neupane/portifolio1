@@ -70,17 +70,8 @@ font-family: "Inter",sans-serif;
 
 }
 
-@media only screen and( min-width:655px) {
-    nav{
-        display:none;
-        padding:none;
-        margin:none;
-        height:100vh;
-        margin-left:none;
-    margin-right:none;
-    display: none;
-    justify-content: none;
-    }
+@media only screen and (max-width:700px) {
+    
     .navbar h4{
         font-size:9px;
         margin:none;
@@ -90,8 +81,18 @@ font-family: "Inter",sans-serif;
         font-size:9px;
     }
 
-    .navElements li{
+    .Clients-Feedback{
+        width:100%;
+    }
+    .navElements ul{
         padding:none;
+        display:none;
+    }
+
+    .Cards{
+        width:100%;
+        padding:none;
+        margin: none;
     }
 }
 
@@ -157,26 +158,105 @@ li:hover{
     background-color: lightgrey;
 }
 
-/* .Text{
-    height:100vh;
-} */
+
+
+/* max used previously and width as 70%  */
+@media only screen and (min-width:550px){
+/* not working */
+    .navElements a{   
+        display:none;
+    }
+    
+    .Text1 h3{
+        font-size:1px;
+        padding:none;
+        font-weight:none;
+    
+    }
+
+    .Enrollment{
+        width:100%;
+    }
+    .Text2{
+font-size:5px;
+    }
+
+    .Request{
+        display:none;
+    }
+
+.Intro_page{
+    font-size: 20px;
+    margin:auto;
+
+    
+     /* background: rgb(255,255,255);
+background: linear-gradient(73deg, rgba(255,255,255,1) 0%, rgba(239,232,249,1) 13%, rgba(221,207,243,1) 17%, rgba(205,194,240,1) 25%, rgba(219,205,241,1) 28%, rgba(233,216,241,1) 30%, rgba(205,194,240,1) 40%, rgba(219,201,240,1) 47%, rgba(237,243,254,1) 61%, rgba(228,231,227,1) 70%, rgba(198,232,234,1) 84%, rgba(209,243,251,1) 95%, rgba(235,250,254,1) 100%); */
+} 
+
+
+.Textual h2{
+    font-size:5px;
+    
+}
+ .Clients-Feedback{
+    width:100%;
+
+ }
+
+}
+
+
+@media only screen and (min-width:558){
+    .Text1{
+        font-size: 10px;
+        padding:0px 0px;
+        margin:none;
+    }
+
+
+    .project-1{
+        padding:none;
+        width:100%;
+    }
+
+    .numbering{
+        padding: none;
+    }
+}
+
+
+@media only screen and (min-width:600) and (max-width:689)
+{
+
+    .last{
+        padding:0px 0px;
+    }
+
+    .last-footer{
+        margin:none;
+
+    }
+
+    right-footer ul{
+        margin:none;
+        padding:none;
+    }
+}
+
+
 
 .Text1{
 
     text-align: center;
-    margin-top: 200px;
-    margin-bottom: 30px;
-    /* margin-bottom:13px; */
-    /* font-size: 6rem; */
+    /* padding:40px 10px; */
+    padding:150px;
     font-weight:400;
     font-family: "Roboto", sans-serif;
     font-size: 100px;
     letter-spacing :-4.5px;
     line-height: 100px;
-    
-text-align :center;
-    
-
+    text-align :center;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -196,33 +276,29 @@ text-align :center;
 
 
 .Text2{
-/* margin-right:10rem;
-margin-left:10rem; */
-margin-top: 3px;
-margin-bottom: 3px;
+padding:20px 20px;
 color:rgb(104, 112, 118);
 text-align:center;
-
-/* please make sure this font exists */
-font-family:"Roberto" , sans-serif;
+font-family: sans-serif;
 font-size :20px;
 font-weight: 300;
-
 letter-spacing: 0.2px;
 line-height: 30px;
 
 }
 
 
+
 .ProjectRequest {
     color:rgb(0, 106, 220);
     font-weight: bolder;
     font-family:"Inter", sans-serif;
-text-align: center;
-margin-top: 30px;
-font-size :19px;
-font-weight:500;
-line-height :24px;
+    text-align: center;
+    margin-top: 30px;
+    font-size :19px;
+    font-weight:500;
+    line-height :24px;
+    /* padding-bottom: 50px; */
     
     
 }
@@ -255,68 +331,68 @@ line-height :24px;
     justify-content:center;
     /* height:100vh; */
     margin:auto;
+    padding:50px 50px;
 }
 
 .Intro_page img{
-    /* height:30rem; */
-    width:15rem;
-    margin:1rem 1rem;
-
-    vertical-align: middle;
-    object-fit: cover;
+     width:100%;
+     vertical-align: middle;
+     object-fit: cover;
+}
   
-      
+    
+/* .gradient-background {
+    background: rgb(255,255,255);
+    background: linear-gradient(73deg, 
+        rgba(255,255,255,1) 0%, 
+        rgba(239,232,249,1) 13%, 
+        rgba(221,207,243,1) 17%, 
+        rgba(205,194,240,1) 25%, 
+        rgba(219,205,241,1) 28%, 
+        rgba(233,216,241,1) 30%, 
+        rgba(205,194,240,1) 40%, 
+        rgba(219,201,240,1) 47%, 
+        rgba(237,243,254,1) 61%, 
+        rgba(228,231,227,1) 70%, 
+        rgba(198,232,234,1) 84%, 
+        rgba(209,243,251,1) 95%, 
+        rgba(235,250,254,1) 100%
+    ); 
+} */
+.gradient-background{
+    background: rgb(255,255,255);
+background: linear-gradient(45deg, rgba(255,255,255,1) 53%, rgba(239,232,249,1) 55%, rgba(221,207,243,1) 60%, rgba(219,205,241,1) 63%, rgba(215,202,241,1) 65%, rgba(187,235,243,1) 69%, rgba(187,235,243,1) 80%, rgba(198,232,234,1) 84%, rgba(209,243,251,1) 95%, rgba(235,250,254,1) 100%);
 }
 
-/* .image-gradient{
-     border:1px solid transparent;
-    border-radius:1px; 
-    width:20rem;
-    height:32rem;
-    background: rgb(179,52,113);
-    background: linear-gradient(45deg, rgba(179,52,113,1) 0%, rgba(220,220,249,1) 0%, rgba(231,221,247,1) 30%, rgba(195,229,232,1) 82%);
-    opacity: 1;
-} */
- 
 
 .Textual {
    
-    text-align:left;
-    /* height:15em; */
+    text-align:left; 
+    font-family: "Inter",sans-serif;
+    padding:40px 40px;
 
-/*     //try to be consistent with which unit to use */
-    margin-top: 130px;
-    margin-left:4rem;
     
 }
 
  .Textual h2{
-    /* font-size: 45px; */
-    border: 2px solid skyblue;
-    width:30rem;
-    
-    /* font-weight: bolder; */
-
-    color :rgb(17, 24, 28);
-
-/*      donot repeatedly give font-family to every element. it should take font from body and tags defined in top */
-font-family :"Inter", sans-serif;
+/* border: 2px solid skyblue; */
+width:100%;
+color :rgb(17, 24, 28);
 font-size :50px;
 font-weight :500;
 letter-spacing: -2.92px;
 line-height :60px;
-margin-right: 60px;
+
 }
 
 
 .Textual h6{
-    margin-top:15px;
-    font-family: "Inter",sans-serif;
-   color: rgb(104, 112, 118);
-   font-weight:500;
-   font-size: 15px;
+      
+ /* padding:20px 20px;    */
+color: rgb(104, 112, 118);
+font-weight:500; 
+font-size: 15px;
 font-style: normal;
-/* height:350px; */
 opacity:1;
 }
 
@@ -356,8 +432,8 @@ opacity:1;
 .Card{
     border: 2px solid transparent;
     border-radius:8px;
-    width:35%;
-    margin:20px 20px;
+    /* width:35%; */
+    margin:30px 30px;
     background-color: #687076;
     
 }
@@ -369,6 +445,8 @@ opacity:1;
         display:flex;
         flex-wrap: wrap;
         justify-content:center;
+        /* recently added haiiiii */
+        padding:40px 40px;  
 
         
     }
@@ -376,15 +454,16 @@ opacity:1;
 
     .image{
         overflow: hidden;
+        flex-wrap:wrap;
         padding-top:12px;
         padding-right:20px;
         padding-left:20px;
         padding-bottom: none;
-border:2px solid transparent;
-border-radius: 8px;
-width:calc(50%-30px);
-height:15rem;
-transition:transform 0.3s ease;
+        border:2px solid transparent;
+        border-radius: 8px;
+        /* width:calc(50%-30px); */
+        /* height:15rem; */
+        transition:transform 0.3s ease;
   }
 
 
@@ -447,18 +526,26 @@ margin-bottom:3rem;
     letter-spacing: -.03em;
     }
 
+    
+.Feedback{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    padding:50px 30px;
+    gap:40px;
+    
+    
+}
+
     .Clients-Feedback{
 border:2px solid transparent;
 border-radius: 8px;
 box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Adding shadow */
 width:30%;
-margin-top:20px;
-margin-bottom:20px;
-padding: 30px 30px;
-/* height:33rem; */
+margin-bottom:20px; 
+padding: 200px 200px;
 letter-spacing:-0.22px;
-
-/* explnation for this font-family required */
 font-family: "sans-serif", serif;
 font-size: 30px;
 font-weight :400;
@@ -473,36 +560,77 @@ background-color: white;
  border:2px solid transparent;
 border-radius: 8px;
 width:82px;
-margin:20px;
+/* margin:20px; */
 
     }
 
     .comments img{
-        width:70px;
-        height:80px;
+        width:100%;
+        /* height:80px; */
         border:2px solid transparent;
         border-radius: 8px;
+        /* padding:0 0 20px 0px; */
 
     }
 
     .comments-a p{
-        margin:30px;
+        /* margin:30px; */
         font-family: "sans-serif", serif;
 font-size: 23px;
 font-weight :500;
 letter-spacing :-0.20px;
 line-height: 30px;
-margin-bottom: 50px;
+/* margin-bottom: 50px; */
 
     }
+
+
+ @media only screen and (min-width:450px) and (max-width:650) {
+.Enrollment{
+    width:100%;
+}
+    }
+
+
+    @media only screen and (min-width:400px)  {
+
+        .Enrollment{
+width:100%;
+        }
+
+        .Clients-Feedback{
+            width:100%;
+    }
+
+    .Text1{
+        padding: 90px 0px;
+    } 
+
+.foot-grp1{
+    width:100%;
+    padding:0px 0px;
+}
+
+.h-md-100 {
+    height:none;
+  }
+
+  .project-1{
+    width:100%;
+  }
+
+  .Questions h4{
+    font-size:20px;
+    font-weight: 200;
+    padding:none;
+    text-align:center;
+  }
+}
 
     .Foott{ 
      
      font-family: "poppins";
      line-height: 2.4px;
-     /* padding:13px;
-     margin-left: 17px;
-  */
     
     }
 
@@ -510,19 +638,15 @@ margin-bottom: 50px;
     .Foott h6{
         font-size: 18px;
         font-weight :500;
-        height :27px;
         line-height :24px;
         text-size-adjust :100%;
-        /* font-family: "poppins"; */
+        
     }
 
 .Foott p{
  color:rgb(112, 116, 120);
-    /* font-weight:400px; */
-    font-size: 15px;
-    /* font-family: "Inter"; */
+ font-size: 15px;    
 font-weight :500;
-/* height :22.2px; */
 line-height :4px;
 text-size-adjust :100%;
 unicode-bidi :isolate;
@@ -530,75 +654,43 @@ unicode-bidi :isolate;
 
 }
 
-
-
-.Feedback{
+.logoo{
     display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 8px;
-    
-    
+    justify-content:space-between;
+    padding:30px 0px;
 }
 
 
-@media only screen and( min-width:7px){
-    .Questions h3 {
-        font-size:50px;
-        font-weight: 500;
-        margin: 4rem 13rem;
-        font-family: "lato";
-}
-}
 
 .foot-grp1{
-/* background-color: black; */
-justify-content: center;
-   margin:8rem 0px;
-   padding:20px 6px;
+   padding:20px 20px;
+   justify-content: center;
    font-family:"Inter";
    font-size:40px;
    background: rgb(179,52,113);
 background: linear-gradient(45deg, rgba(179,52,113,1) 0%, rgba(48,50,51,1) 0%, rgba(0,0,0,1) 20%, rgba(46,32,37,1) 30%, rgba(71,49,58,1) 50%, rgba(26,27,27,1) 71%);
 
-
 }
 
-/* .text{
-    padding:20rem 20rem;
-} */
 
 
 .foot-grp1 h2{
-    margin-top:90px;
-    margin-bottom :9px 0px;
     color: rgb(236, 237, 238);
-text-align: center;
-font-size: 60px;
+    text-align: center;
+    font-size: 60px;
 
 }
-
 
 
 .description h2{
     text-align: center;
-    margin-top:6rem;
-    margin-bottom: 6rem;
-}
+    padding:40px 0px;
+
+
+}  
 
 
 
-.logoo{
-    display:flex;
-    justify-content:space-between;
-    padding:30px 30px;
-}
-
-.testimonial-logo{
-/* margin-top:2rem;
-margin-right:20px; */
-/* object-fit: cover; */
-}
 
 .rounded{
     border: 1px solid ;
@@ -608,54 +700,55 @@ margin-right:20px; */
 
 .p-3 .rounded .text-center{
     display: flex;
-    padding: 12px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+
     
       
 }
 
 .rounded p{
-    
+    margin:none;
    color: rgb(155, 161, 166);
 }
+
 
 .d-flex .rounded{
     background-color: black;
 }
 
+
+
  .rounded  h5{
 font-size:36px;
 font-weight: 400;
 color: rgb(236, 237, 238);
-/* font-size:4 */
+
 }
 
 .rounded h4{
   color:rgb(236, 237, 238);
 }
 
+.col-6 .rounded{
+    background-color: black;
+}
+
 
 
 .webflow h2{
-    margin:20px;
+    padding:20px 20px;
 text-align: center;
     font-family :"Inter Display", sans-serif;
     font-weight: bolder;
     font-family: "Lato";
-}
 
-.row{
-    align-items: stretch;
 }
 
 .col-6 .col-3{
     font-family: "Lato";
 }
 
-.h-sm-100 {
+.h-md-100 {
     height:calc(60% + 105px);
     background-color: black;
   }
@@ -666,28 +759,42 @@ text-align: center;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.307);
     border:3px solid transparent;
     border-radius:5px;
-    margin:10px 10px;
     width:40%;
-    /* height: 14rem; */
-    padding: 30px 30px;
-    overflow:hidden;
+    text-overflow: ellipsis;
     display:flex;
-    align-items: flex-start;
-    /* justify-content:safe; */
     font-family: "Inter";
-background-color :rgb(255, 255, 255);
+    background-color :rgb(255, 255, 255);
     border-bottom-color: rgb(236, 238, 240);
+     
     
 }
 
 
+@media only screen and (min-width:660) and (max-width:700){
+
+    .Clients-Feedback{
+        width:100%;
+    
+     }
+}
+
+
+@media only screen and (min-width:790) and (max-width:875){
+.Enrollment{
+    width:100%;
+}
+
+.Clients-Feedback{
+    width:100%;
+}
+}
+
+
 .numbering{
-    margin-top:25px;
-    margin-right: 25px;
-    margin-bottom: 25px;
-    margin-left: none;
+    padding:30px 25px 30px 0px;
     color :rgb(104, 112, 118);
     font-family: "slab-serif";
+
 }
 
 
@@ -700,35 +807,36 @@ background-color :rgb(255, 255, 255);
 }
 
 .project-1 p {
-    /* font-size: 15px;
-    color: rgb(104, 112, 118);
-    letter-spacing: 0.17px;
-line-height:18px;
-font-family: "Roberto"; */
-
 color :rgb(104, 112, 118);
 cursor: none;
 display: block;
 font-family :"Lato";
 font-size :15px;
-height :31.1875px;
 letter-spacing: 0.10px;
 line-height :25.5px;
 }
 
 .full{
     display: flex;
+    flex-wrap: wrap;
     justify-content:center;
     gap:30px;
-    margin-bottom:30px;
+
+    
     
 }
 
+.Faq_item{
+    /* padding:60px 200px; */
+    width:50%;
+    align-items: center;
+    
+}
 
 .Questions h4{
     font-size: 60px;
     font-weight:500;
-    margin:4rem 13rem; 
+    padding:20px 200px;
     font-family: "lato";
 }
 
@@ -756,21 +864,15 @@ line-height :25.5px;
 
 
  .accordion-body{
-height :50px;
-/* line-height:20px; */
-/* margin-left: 226px;
-margin-right: 226px; */
+height :auto;
 max-width: 748px;
-/* text-size-adjust :100%; */
 color:gray !important;
-/* font-size: 16px; */
 font-family: sans-serif;
 letter-spacing: 0.17px;
 line-height: 23.375px;
-max-width: 650px;
 padding-bottom :12px;
 padding-top: 4px;
-/* font-weight: 150; */
+
 
 
 }
@@ -778,33 +880,13 @@ padding-top: 4px;
 .accordion-item{
     align-items: center;
     appearance:button;
-    /* background-color: rgba(0, 0, 0, 0); */
     background-color: white;
     padding:5px;
-
-     /* border-bottom-color :rgb(33, 37, 41);
-    border-bottom-left-radius :0px;
-    border-bottom-right-radius :0px;
-    border-bottom-style:none; 
-     font-optical-sizing :auto;     
-font-size: 22px; 
- font-size-adjust: none;
-font-stretch :100%;
-font-style :normal;
-font-weight:500px; */
-
-border-top: none;
-border-left: none;
-border-right:none;
+    font-optical-sizing :auto; 
+    border-top: none;
+    border-left: none;
+    border-right:none;
 }
-
-
-
-.FAQ{
-    margin:12rem;
-    margin-top:50px;
-}
-
 
 
 .last-card{
@@ -815,10 +897,10 @@ border-right:none;
 
     background-image: url("https://assets.website-files.com/6279077bf697b924fac6e205/62f3c2a8b9b8314b4a29fc04_bottom-bg.webp");
 
-width:95%;
-padding:7rem 7rem;
-/* height:80vh; */
-text-align: center;
+    width:95%;
+    padding:7rem 7rem;
+
+    text-align: center;
 
 
 }
@@ -831,8 +913,6 @@ font-weight: bolder;
 display:inline-flex;
 align-items: center;
 text-decoration: none;
-/* opacity: 1;
-transition: opacity 2s ease-in-out;  */
 
 }
 
@@ -841,10 +921,9 @@ transition: opacity 2s ease-in-out;  */
     background-color:lightgrey;
      border-radius: 3px;
      transition: smooth 0.3s ease;
-     /* border-width: px; */
      color: white;
      transition: smooth 0.3s ease;
-     /* opacity: 0.3; Dims the element */
+     
      
 
 }
@@ -865,15 +944,15 @@ transition: opacity 2s ease-in-out;  */
     width:50%;
     height:13rem;
     display:flex;
+    /* flex-wrap: wrap; */
     justify-content:space-between;
     align-items: center;
     font-family: "Inter";
-
     border: 2px solid #eceef0;
     background-color:#f8f9fa;
     transition:box-shadow .2s;
     overflow: hidden;
-    /* padding:20px; */
+    
 }
 
 .card22 img{
@@ -888,7 +967,7 @@ box-shadow: #11181c;
 }
 
 .card-again{
-    padding: 30px 30px;
+    padding: 20px 20px;
 }
 
 .carddd{
@@ -925,9 +1004,9 @@ padding:5px 10px;
 }
 
 .right-footer ul {
-/* text-decoration:none; */
 list-style-type:none;
 }
+
 .right-footer a{
     padding:5px 10px; 
     text-decoration: none;
@@ -947,6 +1026,7 @@ transition: smooth 0.3s ease;
 
 .last-footer{
     display:flex;
+    flex-wrap:wrap;
     justify-content:space-around;
     margin-top:60px;
     
@@ -959,4 +1039,3 @@ transition: smooth 0.3s ease;
     color:rgb(104, 112, 118);
 
 }
-
