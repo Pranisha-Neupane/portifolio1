@@ -10,6 +10,7 @@
 body{
     font-family: "Adamina", serif;
     font-weight: 400;
+    font-size:16px;
     font-style: normal;
     color:black;
     background-color: whitesmoke;
@@ -70,31 +71,11 @@ font-family: "Inter",sans-serif;
 
 }
 
-@media only screen and (max-width:700px) {
-    
-    .navbar h4{
-        font-size:9px;
-        margin:none;
-    }
 
-    .navbar .Request{
-        font-size:9px;
-    }
-
-    .Clients-Feedback{
-        width:100%;
-    }
-    .navElements ul{
-        padding:none;
-        display:none;
-    }
-
-    .Cards{
-        width:100%;
-        padding:none;
-        margin: none;
-    }
-}
+/* .Text{
+    height:100vh;
+} */
+ 
 
 
 
@@ -160,97 +141,15 @@ li:hover{
 
 
 
-/* max used previously and width as 70%  */
-@media only screen and (min-width:550px){
-/* not working */
-    .navElements a{   
-        display:none;
-    }
-    
-    .Text1 h3{
-        font-size:1px;
-        padding:none;
-        font-weight:none;
-    
-    }
-
-    .Enrollment{
-        width:100%;
-    }
-    .Text2{
-font-size:5px;
-    }
-
-    .Request{
-        display:none;
-    }
-
-.Intro_page{
-    font-size: 20px;
-    margin:auto;
-
-    
-     /* background: rgb(255,255,255);
-background: linear-gradient(73deg, rgba(255,255,255,1) 0%, rgba(239,232,249,1) 13%, rgba(221,207,243,1) 17%, rgba(205,194,240,1) 25%, rgba(219,205,241,1) 28%, rgba(233,216,241,1) 30%, rgba(205,194,240,1) 40%, rgba(219,201,240,1) 47%, rgba(237,243,254,1) 61%, rgba(228,231,227,1) 70%, rgba(198,232,234,1) 84%, rgba(209,243,251,1) 95%, rgba(235,250,254,1) 100%); */
-} 
-
-
-.Textual h2{
-    font-size:5px;
-    
-}
- .Clients-Feedback{
-    width:100%;
-
- }
-
-}
-
-
-@media only screen and (min-width:558){
-    .Text1{
-        font-size: 10px;
-        padding:0px 0px;
-        margin:none;
-    }
-
-
-    .project-1{
-        padding:none;
-        width:100%;
-    }
-
-    .numbering{
-        padding: none;
-    }
-}
-
-
-@media only screen and (min-width:600) and (max-width:689)
-{
-
-    .last{
-        padding:0px 0px;
-    }
-
-    .last-footer{
-        margin:none;
-
-    }
-
-    right-footer ul{
-        margin:none;
-        padding:none;
-    }
-}
 
 
 
 .Text1{
 
     text-align: center;
-    /* padding:40px 10px; */
-    padding:150px;
+    padding-top:180px ;
+
+    /* padding:150px; */
     font-weight:400;
     font-family: "Roboto", sans-serif;
     font-size: 100px;
@@ -328,10 +227,11 @@ line-height: 30px;
 .Intro_page{
     display:flex;
     flex-wrap:wrap;
-    justify-content:center;
+    justify-content:space-evenly;
+    /* align-items: center; */
     /* height:100vh; */
     margin:auto;
-    padding:50px 50px;
+    padding:100px 0px;
 }
 
 .Intro_page img{
@@ -341,25 +241,9 @@ line-height: 30px;
 }
   
     
-/* .gradient-background {
-    background: rgb(255,255,255);
-    background: linear-gradient(73deg, 
-        rgba(255,255,255,1) 0%, 
-        rgba(239,232,249,1) 13%, 
-        rgba(221,207,243,1) 17%, 
-        rgba(205,194,240,1) 25%, 
-        rgba(219,205,241,1) 28%, 
-        rgba(233,216,241,1) 30%, 
-        rgba(205,194,240,1) 40%, 
-        rgba(219,201,240,1) 47%, 
-        rgba(237,243,254,1) 61%, 
-        rgba(228,231,227,1) 70%, 
-        rgba(198,232,234,1) 84%, 
-        rgba(209,243,251,1) 95%, 
-        rgba(235,250,254,1) 100%
-    ); 
-} */
+
 .gradient-background{
+    /* height:100vh; */
     background: rgb(255,255,255);
 background: linear-gradient(45deg, rgba(255,255,255,1) 53%, rgba(239,232,249,1) 55%, rgba(221,207,243,1) 60%, rgba(219,205,241,1) 63%, rgba(215,202,241,1) 65%, rgba(187,235,243,1) 69%, rgba(187,235,243,1) 80%, rgba(198,232,234,1) 84%, rgba(209,243,251,1) 95%, rgba(235,250,254,1) 100%);
 }
@@ -378,10 +262,11 @@ background: linear-gradient(45deg, rgba(255,255,255,1) 53%, rgba(239,232,249,1) 
 /* border: 2px solid skyblue; */
 width:100%;
 color :rgb(17, 24, 28);
-font-size :50px;
+font-size :60px;
 font-weight :500;
 letter-spacing: -2.92px;
-line-height :60px;
+line-height:1.30;
+/* height :140.781px; */
 
 }
 
@@ -397,19 +282,6 @@ opacity:1;
 }
 
 
-@media only screen and (max-width: 850px) {
-    .Intro_page img {
-
-        margin:none;
-        object-fit: cover;
-        
-    }
-
-    .image-gradient{
-       margin:30px 0;
-
-    }
-}
 
 
 
@@ -550,7 +422,7 @@ font-family: "sans-serif", serif;
 font-size: 30px;
 font-weight :400;
 text-size-adjust :100%;
-padding:13px;
+padding: 40px 40px;
 
 background-color: white;
 
@@ -560,6 +432,7 @@ background-color: white;
  border:2px solid transparent;
 border-radius: 8px;
 width:82px;
+padding-bottom: 24px;
 /* margin:20px; */
 
     }
@@ -585,47 +458,6 @@ line-height: 30px;
     }
 
 
- @media only screen and (min-width:450px) and (max-width:650) {
-.Enrollment{
-    width:100%;
-}
-    }
-
-
-    @media only screen and (min-width:400px)  {
-
-        .Enrollment{
-width:100%;
-        }
-
-        .Clients-Feedback{
-            width:100%;
-    }
-
-    .Text1{
-        padding: 90px 0px;
-    } 
-
-.foot-grp1{
-    width:100%;
-    padding:0px 0px;
-}
-
-.h-md-100 {
-    height:none;
-  }
-
-  .project-1{
-    width:100%;
-  }
-
-  .Questions h4{
-    font-size:20px;
-    font-weight: 200;
-    padding:none;
-    text-align:center;
-  }
-}
 
     .Foott{ 
      
@@ -656,6 +488,7 @@ unicode-bidi :isolate;
 
 .logoo{
     display:flex;
+    flex-wrap:wrap;
     justify-content:space-between;
     padding:30px 0px;
 }
@@ -748,11 +581,18 @@ text-align: center;
     font-family: "Lato";
 }
 
-.h-md-100 {
-    height:calc(60% + 105px);
-    background-color: black;
-  }
+
   
+  .full{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap:30px;
+    width:96%;
+    margin: auto;
+    
+    
+}
 
    
 .Enrollment{
@@ -760,35 +600,16 @@ text-align: center;
     border:3px solid transparent;
     border-radius:5px;
     width:40%;
+    /* padding:30px 30px; */
     text-overflow: ellipsis;
     display:flex;
+    /* flex-wrap: wrap; */
     font-family: "Inter";
     background-color :rgb(255, 255, 255);
     border-bottom-color: rgb(236, 238, 240);
      
     
 }
-
-
-@media only screen and (min-width:660) and (max-width:700){
-
-    .Clients-Feedback{
-        width:100%;
-    
-     }
-}
-
-
-@media only screen and (min-width:790) and (max-width:875){
-.Enrollment{
-    width:100%;
-}
-
-.Clients-Feedback{
-    width:100%;
-}
-}
-
 
 .numbering{
     padding:30px 25px 30px 0px;
@@ -816,27 +637,26 @@ letter-spacing: 0.10px;
 line-height :25.5px;
 }
 
-.full{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    gap:30px;
 
-    
-    
-}
+
+
+
+
 
 .Faq_item{
     /* padding:60px 200px; */
     width:50%;
-    align-items: center;
+    margin:auto;
+    /* align-items: center; */
     
 }
 
 .Questions h4{
     font-size: 60px;
     font-weight:500;
-    padding:20px 200px;
+    /* padding:20px 200px; */
+    margin-top: 5rem;
+    text-align: center;
     font-family: "lato";
 }
 
@@ -888,6 +708,10 @@ padding-top: 4px;
     border-right:none;
 }
 
+.FAQ{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
 
 .last-card{
     border:3px solid transparent;
@@ -895,9 +719,9 @@ padding-top: 4px;
     font-family: "Inter";
     margin:auto;
 
-    background-image: url("https://assets.website-files.com/6279077bf697b924fac6e205/62f3c2a8b9b8314b4a29fc04_bottom-bg.webp");
+    background-image: url("https://cdn.prod.website-files.com/6279077bf697b924fac6e205/62f3c2a8b9b8314b4a29fc04_bottom-bg.webp");
 
-    width:95%;
+    /* width:95%; */
     padding:7rem 7rem;
 
     text-align: center;
@@ -935,16 +759,24 @@ text-decoration: none;
 
 }
 
+.carddd{
+    gap: 20px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content:space-between;
+    transition-duration: 0.2s;
+transition-property:box-shadow;
+
+}
+
 .Cards{
    
     border-radius:10px;
-    margin-left:30px;
     margin-top:30px;
-    margin-right:30px;
-    width:50%;
-    height:13rem;
+    width:40%;
+    margin: 3rem auto;
+    /* height:13rem; */
     display:flex;
-    /* flex-wrap: wrap; */
     justify-content:space-between;
     align-items: center;
     font-family: "Inter";
@@ -955,11 +787,16 @@ text-decoration: none;
     
 }
 
-.card22 img{
+.card22{
 
-width:9rem;
-height:9rem;
-object-fit: cover;
+    width:40%;
+    object-fit: cover;
+    overflow: hidden;
+
+}
+
+.card22 img{
+width:100%;
 border:1px solid transparent;
 border-radius:none;
 box-shadow: #11181c;   
@@ -970,13 +807,7 @@ box-shadow: #11181c;
     padding: 20px 20px;
 }
 
-.carddd{
-    display: flex;
-    justify-content:space-between;
-    transition-duration: 0.2s;
-transition-property:box-shadow;
 
-}
 
 
 .card-again p{
@@ -1028,7 +859,7 @@ transition: smooth 0.3s ease;
     display:flex;
     flex-wrap:wrap;
     justify-content:space-around;
-    margin-top:60px;
+    margin-top:32px;
     
 }
 
@@ -1039,3 +870,294 @@ transition: smooth 0.3s ease;
     color:rgb(104, 112, 118);
 
 }
+
+
+
+
+
+
+
+@media(max-width:500px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .Feedback{
+        display: block;
+        width: 95%;
+        padding: 0;
+        margin:auto;
+    }
+    .Clients-Feedback{
+        width: 100%;
+    }
+    .navElements ul{
+        display: none;
+    }
+
+/* recently added  can be deleted*/
+    .Text1{
+     padding-top:90px ;
+    font-weight:400;
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    line-height:50px;
+    }
+    
+.last-card{
+    padding:0 0 ;
+}
+
+.rounded h4{
+    font-size:20px;
+}
+ 
+.rounded p{
+font-size: 10px;
+}
+
+.rounded h5{
+    font-size: 15px;
+    text-align: center;
+}
+
+.Text2{
+    font-size:10px;
+    letter-spacing: 0.2px;
+    line-height: 16px;
+}
+
+.Request{
+    font-size: 10px;
+}
+
+.navbar h4{
+    font-size: 10px;
+}
+
+.navbar{
+    justify-content:space-around;
+}
+
+.Textual h2{
+    font-size:30px;
+    font-weight: 500px;
+}
+
+.Textual h6{
+    font-size: 10px;
+}
+
+.comments-a p{
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    line-height: 26px;
+
+}
+
+.carddd{
+    display:flex;
+    flex-direction: column;
+}
+
+.Cards{
+    width:100%;
+}
+/* 
+.cards {
+     flex: 1 ; /* For medium screens, two cards per row  
+  }
+
+  .card22 .img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+ 
+  */
+}
+ 
+
+
+
+@media(max-width:953px){
+    .card-box{
+        display: block;
+    }
+    .Card{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    .image img{
+        object-fit: cover;
+    }
+    .moreProjects{
+        margin-top: 0;
+
+    }
+    .Clients{
+        margin: auto;
+    }
+    .Feedback{
+        display: block;
+
+    }
+    .Clients-Feedback{
+        width: 100%;
+    }
+    .full{
+        width: 80%;
+        margin: auto;
+    }
+    .Enrollment{
+        width: 100%;
+    }
+    .Questions{
+        width: 80%;
+        margin: auto;
+        padding: 0;
+        font-size: 40px;
+    }
+    .Questions h4 {
+        font-size: 40px;
+        font-weight: 500;
+        padding: 20px;
+
+
+    }
+    .Faq_item{
+        width: 90%;
+        margin: auto;
+    }
+    .last-card{
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .carddd{
+        width: 90%;
+        margin: auto;
+    }
+
+    .navElements ul{
+        display: none;
+    }
+}
+
+/* @media (max-width: 1024px) {
+    .cards {
+      flex: 1 1 calc(50% - 20px); /* For medium screens, two cards per row 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cards {
+      flex: 1 1 100%; /* For small screens, one card per row 
+    }
+  } */
+  
+
+  @media(min-width:501px) and (max-width:695px){
+    .Textual h2{
+    width: 70%;
+    margin:auto;
+    font-size: 51px;
+    font-weight: 500;
+    letter-spacing: -0.92px;
+    line-height: 1.2;
+
+}
+
+.Textual h6{
+    font-weight: 500;
+    font-size: 12px;
+    font-style: normal;
+    opacity: 1;
+    width:80%;
+    margin:auto;
+    padding-top:20px;
+}
+
+.Text2{
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    line-height: 25px;
+}
+.moreProjects{
+    margin-bottom: 20px;
+}
+
+.carddd{
+    display:flex;
+    flex-direction: column;
+}
+
+.Cards{
+    width:90%;
+    margin: auto;
+}
+
+    }
+  
+
+    
+    @media(min-width:576px) and (max-width:992px)
+    {
+        .box1{
+            margin-top: 22px;
+        }
+
+        .mobile-nav {
+            display: none; /* Hide by default */
+          }
+    }
+
+    
+
+    /* code for hamburger icon */
+    /* For hamburger icon */
+     @media(min-width:857px) and (max-width:1318px){
+
+        .navbar .mobile-new{
+            display:none;
+        }
+    } 
+
+
+     /* Media query for screen sizes between 400px and 953px  */
+    @media (min-width: 400px) and (max-width: 953px) {
+      .mobile-nav {
+        display: block; /* Show hamburger icon */
+      }
+    
+      .navElements {
+        display: none; /* Hide regular nav elements */
+      }
+    
+      /* Optional: style for mobile menu when active
+      .mobile-nav.active + .navElements {
+        display: block;
+      } */
+
+
+    } 
+    
+    @media (min-width: 953px) {
+        .mobile-nav {
+          display: none; /* Hide hamburger icon */
+        }
+      
+        .navElements {
+          display: flex; /* Show regular nav elements */
+        }
+      }
+
+
+
+      /* hamburger icon toggle feature based on screen size */
+
+      /* Basic styling for the hamburger button */
