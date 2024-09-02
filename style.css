@@ -13,7 +13,7 @@ body{
     font-size:16px;
     font-style: normal;
     color:black;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
   }
   
    /* primarily declared headings and paragraph */
@@ -39,33 +39,6 @@ a{
 }
 
 
-/* nav tag */
-
- /* .navbar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    z-index: 100;
-    background-color: hsla(0, 0%, 100%, .7);
-    -webkit-backdrop-filter:blur(12px);
-    backdrop-filter :blur(12px) !important ;
-    transition:background-color.2s, color .2s;
-  }  */
-
-  
- 
-
-/*  
- .navbar{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    margin-left:25px;
-    margin-right:25px;
-    border-bottom: 1px solid lightgray;   
-} */
-
 .navbar {
     font-size :17px;
 font-weight: 500;
@@ -84,30 +57,16 @@ a.nav-link.active.hide{
 }
 
 
-
 .navbar-brand .hidden_element{
     font-size: 24px;
     font-weight:400;
 }
 
 
-
-
 .navElements ul {
     list-style-type: none;
 }
-
-/* .navElements li a{
-    /* margin:10px; 
-    padding:8px 14px;
-    /* list-style-type: none; 
-    font-size: 12px;
-    /* text-decoration: none; 
-    color:#687076;
-    text-decoration: none;
-}  */
-
-    
+  
 li:hover{
     border: 1px solid lightgrey;
     border-radius: 12px;
@@ -133,8 +92,6 @@ i .fa-solid .fa-greater-than{
     color:#4b5de7;
     font-weight: bolder;
     /* font-size: 16px; */
-
-
 }
 
 .Request :hover{
@@ -149,12 +106,21 @@ i .fa-solid .fa-greater-than{
 }
 
 
-
+.Home_page{
+    /* height:100vh; */
+    background-color:whitesmoke;
+}
 
 .Text{
-    height:100vh;
-padding:77px 0;
-    text-align: center
+    /* height:100vh; */
+padding:50px 0; 
+    /* text-align: center; */
+     display:flex;
+    justify-content: center;
+    align-items: center; 
+    height: 85vh;
+
+     
 } 
 
 
@@ -164,9 +130,9 @@ padding:77px 0;
     /* padding-top:60px ; */
     font-weight:400;
     font-family: "Roboto", sans-serif;
-    font-size: 100px;
-    letter-spacing :-4.5px;
-    line-height: 100px;
+    font-size: 90px;
+    /* letter-spacing :-4.5px; */
+    line-height: 90px;
     text-align :center;
     -webkit-background-clip: text;
     background-clip: text;
@@ -195,6 +161,7 @@ font-size :px;
 font-weight: 300;
 letter-spacing: 0.2px;
 line-height: 30px;
+margin-top: 20px;
 
 }
 
@@ -205,17 +172,15 @@ line-height: 30px;
     font-weight: bolder;
     font-family:"Inter", sans-serif;
     text-align: center;
-    /* margin-top: 30px; */
-    font-size :19px;
+    margin-top: 40px;
+    font-size :22px;
     font-weight:500;
     line-height :24px;
     /* padding-bottom: 50px; */
-    
-    
+   
 }
 
   .Prp:hover{
-   
     border: 1px solid transparent;
     border-radius: 10px;
     background-color:lightgrey;
@@ -240,25 +205,90 @@ line-height: 30px;
     display:flex;
     flex-wrap:wrap;
     justify-content:space-evenly;
+    align-items: center;
     /* align-items: center; */
     /* height:100vh; */
     margin:auto;
-    padding:100px 0px;
+    padding:50px 0px;
 }
 
 .Intro_page img{
      width:100%;
      vertical-align: middle;
      object-fit: cover;
+     border:2px solid transparent;
+     border-radius:25px;
 }
-  
-    
+
+
+
+/* image linear gradient */
 
 .gradient-background{
-    /* height:100vh; */
-    background: rgb(255,255,255);
-background: linear-gradient(45deg, rgba(255,255,255,1) 53%, rgba(239,232,249,1) 55%, rgba(221,207,243,1) 60%, rgba(219,205,241,1) 63%, rgba(215,202,241,1) 65%, rgba(187,235,243,1) 69%, rgba(187,235,243,1) 80%, rgba(198,232,234,1) 84%, rgba(209,243,251,1) 95%, rgba(235,250,254,1) 100%);
+background-color: #DBD7D2;
 }
+
+.image_gradient_color {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .gradient-border {
+    position: relative;
+    width: 330px; 
+    height: 393px; 
+    }
+  
+  
+   .gradient-border::before {
+    content: '';
+    position: absolute; 
+     top : -30px ;
+     left: -30px; 
+     width: 370px; 
+     height: 490px; 
+    background: conic-gradient(
+      from 180deg at 50% 50%, 
+      #0aefff -69.37deg, 
+      #0f83ff 31.88deg, 
+      #b056e7 120deg, 
+      #ff9966 204.37deg, 
+      #0aefff 290.63deg, 
+      #0f83ff 391.87deg
+    );
+    border-radius: 20px; /* Add slight rounding if needed  */
+   opacity: 0.5; 
+     z-index: 1; 
+     /* recently added  */
+     filter: blur(80px);
+     transform: translateZ(0)
+   } 
+  
+   .gradient-border img { 
+    display: block;
+    width: 330px;
+    height: 393px;
+     position: relative; /* Ensure it stays above the gradient  */
+    z-index: 1; 
+
+}
+
+    /* position: relative;
+     border-top-left-radius: 18px;
+    /* border-top-right-radius: 18px; */
+  
+
+
+/* image linear gradient perfectly done */
+
+
+
+
+
+
 
 
 .Textual {
@@ -300,9 +330,9 @@ opacity:1;
 /* next class i.e. Work assigned */
 .Work{
     /* margin-top:20px; */
-    margin-bottom:20px;
+    margin-bottom:0;
     text-align: center;
-    margin-top: 100px;
+    margin-top:4.125rem;
     /* font-size: 30px; */
 }
 
@@ -319,19 +349,50 @@ opacity:1;
     border-radius:8px;
     width:35%;
     margin:30px 30px;
-    background-color: #687076;
+    
+    /* background: rgb(145,105,236);
+background: linear-gradient(45deg, rgba(145,105,236,1) 5%, rgba(128,122,226,1) 28%, rgba(106,149,215,1) 46%, rgba(82,173,201,1) 54%, rgba(68,189,193,1) 72%, rgba(84,84,123,1) 100%); */
+
+/* background: linear-gradient(135deg, #000000, #00008B, #8B4513); */   
     
 }
 
 
 
 
+
+.Card.a .image{
+    
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.Card.b .image{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+    .Card.d .image{
+        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    }
+
+.Card.c .image{
+ background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+
+
+}
+
+
+#WorkSection{
+    background-color:whitesmoke;
+
+}
+
+
     .card-box{
         display:flex;
         flex-wrap: wrap;
         justify-content:center;
-        /* recently added haiiiii */
-        padding:40px 40px;  
+
+        /* padding:40px 40px;   */
 
         
     }
@@ -394,6 +455,10 @@ font-family: "Lato";
 transition: smooth 0.3s ease;
     }
 
+    #BenefitsSection{
+        background-color: whitesmoke;
+    }
+
     /* What my clients are saying */
     .Clients{
 text-align: center;
@@ -416,14 +481,13 @@ margin-bottom:3rem;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
     padding:50px 30px;
     gap:40px;
     
     
 }
 
-    .Clients-Feedback{
+.Clients-Feedback{
 border:2px solid transparent;
 border-radius: 8px;
 box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Adding shadow */
@@ -531,25 +595,23 @@ background: linear-gradient(45deg, rgba(179,52,113,1) 0%, rgba(48,50,51,1) 0%, r
 .description h2{
     text-align: center;
     padding:40px 0px;
-
-
 }  
 
 
-
-
-.rounded{
-    border: 1px solid ;
-    color :grey;
+.Why_us_box{
+    padding-bottom:40px;
 }
+.rounded{
+    border: 1px solid  grey;
+    color :grey;
+    background-color: black;
+}
+
 
 
 .p-3 .rounded .text-center{
     display: flex;
-    text-align: center;
-
-    
-      
+    text-align: center;    
 }
 
 .rounded p{
@@ -562,27 +624,22 @@ background: linear-gradient(45deg, rgba(179,52,113,1) 0%, rgba(48,50,51,1) 0%, r
     background-color: black;
 }
 
-.rounded{
-    background-color: black;
-}
-
 
   .rounded  h5{
-font-size:36px;
+/* font-size:36px; */
 font-weight: 400;
 color: rgb(236, 237, 238);
 
 }
 
+
 .rounded h4{
   color:rgb(236, 237, 238);
 } 
 
-.col-3 .rounded{
-    background-color: black;
+#ProcessSection{
+    background-color:#ECEAE8;
 }
-
-
 
 .webflow h2{
     /* padding: 48px 20px; */
@@ -593,6 +650,7 @@ margin-bottom: 30px;
     font-family :"Inter Display", sans-serif;
     font-weight: bolder;
     font-family: "Lato";
+    padding-top: 44px;
 
 }
 
@@ -609,9 +667,11 @@ margin-bottom: 30px;
     gap:30px;
     width:96%;
     margin: auto;
+    padding:46px;
     
     
 }
+
 
    
 .Enrollment{
@@ -658,7 +718,10 @@ line-height :25.5px;
 }
 
 
-
+.Asked-Qns{
+    background-color: white;
+    /* margin-bottom:30px; */
+}
 
 
 
@@ -739,16 +802,12 @@ padding-top: 4px;
     border-radius: 4px;
     font-family: "Inter";
     /* margin:auto; */
-    margin: 4rem auto;
-    margin-bottom: 20px;
-
-    background-image: url("https://cdn.prod.website-files.com/6279077bf697b924fac6e205/62f3c2a8b9b8314b4a29fc04_bottom-bg.webp");
-
+    margin:5rem auto;
     width:95%;
     padding:7rem 7rem;
-
     text-align: center;
 
+    background-image: url("https://cdn.prod.website-files.com/6279077bf697b924fac6e205/62f3c2a8b9b8314b4a29fc04_bottom-bg.webp");
 
 }
 
@@ -757,7 +816,7 @@ color:white;
 font-size: 20px;
 margin-top:24px;
 font-weight: bolder;
-display:inline-flex;
+/* display:inline-flex; */
 align-items: center;
 text-decoration: none;
 
@@ -765,7 +824,7 @@ text-decoration: none;
 
 .Text-form a:hover{
     border:4px solid grey;
-    background-color:lightgrey;
+    background-color:grey;
      border-radius: 3px;
      transition: smooth 0.3s ease;
      color: white;
@@ -779,6 +838,11 @@ text-decoration: none;
     font-size: 64px;
     font-weight:500px;
     color:white;
+
+}
+
+.bottomcard{
+    background-color:#e5e4e2;
 
 }
 
@@ -830,7 +894,10 @@ box-shadow: #11181c;
     padding: 20px 20px;
 }
 
+.card-again a:hover{
+    color:red;
 
+}
 
 
 .card-again p{
@@ -894,9 +961,39 @@ transition: smooth 0.3s ease;
 
 }
 
+.side_by_side{
+    display:flex;
+    justify-content:left;
+    text-align: left;
+    line-height: 2;
 
+    /* border-radius:5px; */
+    
+}
 
+.side_by_side i {
+    margin-right:10px;
+    /* width:10%; */
+    color:black;
+}
+.side_by_side i:hover{
+    color:red;
+}
 
+ .side_by_side a{
+
+    color:black;
+} 
+
+ .side_by_side a:hover{
+    width:100%;
+    /* border:1px solid grey;
+    border-radius:5px; */
+    color:red;
+    /* background-color: lightgrey; */
+    font-weight: 500;
+    /* font-size: 15px; */
+} 
 
 
 
@@ -1164,9 +1261,10 @@ font-size: 8px;
         }
 
 
+        
         .nav-link .when_hovered{
         padding:none !important;
-        font-size: 12px !important;
+        font-size: 12px !important;t
         font-weight: 400;
         }
 
@@ -1275,3 +1373,102 @@ a .Prp{
     margin-top:20px;
    }
 }
+
+
+
+/* new code for image slider */
+
+/* for css animation  using @keyframes*/
+
+@keyframes slide {
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-100%);
+    }
+
+}
+
+
+.slider{
+    overflow: hidden;
+    padding:15px 0;
+    /* margin:0 auto; */
+    /* background-color:lavender; */
+    padding-top:40px;
+    background-color: white;
+    white-space: nowrap;
+    position:relative;
+ 
+
+/* before after is not used properly since we havent used  */
+.slider:before ,
+.slider:after 
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:250px;
+    height:100%;
+  background:white;
+    content:"My Skills";
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color:black;
+    font-size: 20px;
+    font-weight: 500;
+    z-index: 2;
+}
+
+.slider:before{
+   left:0;
+   background:linear-gradient (to left, rgba(255,255,255,0),white);
+}
+
+.slider:after{
+    right:0;
+    background:linear-gradient (to right , rgba(255,255,255,0),white);
+    
+}
+
+
+.slider:hover .logos_slide{
+animation-play-state:paused;
+
+}
+
+.logos_slide{
+    animation:30s slide infinite linear;
+    display:inline-block;
+    
+
+}
+
+.logos_slide img{
+    height:40px;
+    margin:0 40px;
+}
+}
+
+
+       
+
+         
+
+    
+     
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+     
