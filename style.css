@@ -2,8 +2,6 @@
 *{    
     margin:0px;
     padding:0px;
-    
-
 }
 
 /* body of my css */
@@ -13,10 +11,10 @@ body{
     font-size:16px;
     font-style: normal;
     color:black;
-    /* background-color: whitesmoke; */
+     background-color: whitesmoke; 
   }
   
-   /* primarily declared headings and paragraph */
+/* primarily declared headings and paragraph */
 h1 { font-size: 3.986rem; }
 h2 { font-size: 2.488rem; }
 h3 { font-size: 1.074rem; }
@@ -68,15 +66,12 @@ a.nav-link.active.hide{
 }
   
 li:hover{
-    border: 1px solid lightgrey;
+    /* border: 1px solid lightgrey; */
     border-radius: 12px;
-    /* color:transparent; */
     color:black;
     background-color:lightgrey;
     position:relative;
     transition: smooth 0.3s ease;
-    /* list-style-type: none;
-    text-decoration: none; */
 }
 
  ul{
@@ -100,7 +95,6 @@ i .fa-solid .fa-greater-than{
     transition: smooth 0.3s ease;
     border: 3px solid lightgrey;
     border-radius: 12px;
-    /* color:transparent; */
     color:black;
     background-color: lightgrey;
 }
@@ -112,26 +106,20 @@ i .fa-solid .fa-greater-than{
 }
 
 .Text{
-    /* height:100vh; */
-padding:50px 0; 
-    /* text-align: center; */
+    padding:50px 0; 
      display:flex;
     justify-content: center;
     align-items: center; 
-    height: 85vh;
-
-     
+    height: 85vh;    
 } 
 
 
 .Text1{
 
     text-align: center;
-    /* padding-top:60px ; */
     font-weight:400;
     font-family: "Roboto", sans-serif;
     font-size: 90px;
-    /* letter-spacing :-4.5px; */
     line-height: 90px;
     text-align :center;
     -webkit-background-clip: text;
@@ -153,7 +141,6 @@ padding:50px 0;
 
 
 .Text2{
-/* padding:20px 20px; */
 color:rgb(104, 112, 118);
 text-align:center;
 font-family: sans-serif;
@@ -162,7 +149,6 @@ font-weight: 300;
 letter-spacing: 0.2px;
 line-height: 30px;
 margin-top: 20px;
-
 }
 
 
@@ -175,16 +161,13 @@ margin-top: 20px;
     margin-top: 40px;
     font-size :22px;
     font-weight:500;
-    line-height :24px;
-    /* padding-bottom: 50px; */
-   
+    line-height :24px;  
 }
 
   .Prp:hover{
     border: 1px solid transparent;
     border-radius: 10px;
     background-color:lightgrey;
-    /* width:20rem; */
     padding-top: 10px;
     padding-bottom: 10px;
     transition: smooth 0.3s ease;
@@ -194,7 +177,6 @@ margin-top: 20px;
 .Prp{
     text-align:center;
     margin-top:30px;
-    /* font-size:16x; */
     text-decoration: none;
     color:rgb(0, 106, 220);
 }
@@ -206,8 +188,6 @@ margin-top: 20px;
     flex-wrap:wrap;
     justify-content:space-evenly;
     align-items: center;
-    /* align-items: center; */
-    /* height:100vh; */
     margin:auto;
     padding:50px 0px;
 }
@@ -221,9 +201,7 @@ margin-top: 20px;
 }
 
 
-
 /* image linear gradient */
-
 .gradient-background{
 background-color: #DBD7D2;
 }
@@ -259,10 +237,9 @@ background-color: #DBD7D2;
       #0aefff 290.63deg, 
       #0f83ff 391.87deg
     );
-    border-radius: 20px; /* Add slight rounding if needed  */
+    border-radius: 20px; 
    opacity: 0.5; 
      z-index: 1; 
-     /* recently added  */
      filter: blur(80px);
      transform: translateZ(0)
    } 
@@ -271,51 +248,29 @@ background-color: #DBD7D2;
     display: block;
     width: 330px;
     height: 393px;
-     position: relative; /* Ensure it stays above the gradient  */
+     position: relative; 
     z-index: 1; 
 
-}
-
-    /* position: relative;
-     border-top-left-radius: 18px;
-    /* border-top-right-radius: 18px; */
-  
-
-
-/* image linear gradient perfectly done */
-
-
-
-
-
-
-
+   }
 
 .Textual {
    
     text-align:left; 
     font-family: "Inter",sans-serif;
-    padding:40px 40px;
-
-    
+    padding:40px 40px; 
 }
 
  .Textual h2{
-/* border: 2px solid skyblue; */
 width:100%;
 color :rgb(17, 24, 28);
 font-size :60px;
 font-weight :500;
 letter-spacing: -2.92px;
 line-height:1.30;
-/* height :140.781px; */
-
 }
 
 
 .Textual h6{
-      
- /* padding:20px 20px;    */
 color: rgb(104, 112, 118);
 font-weight:500; 
 font-size: 15px;
@@ -324,16 +279,11 @@ opacity:1;
 }
 
 
-
-
-
 /* next class i.e. Work assigned */
 .Work{
-    /* margin-top:20px; */
     margin-bottom:0;
     text-align: center;
-    margin-top:4.125rem;
-    /* font-size: 30px; */
+    margin-top:4.125rem;  
 }
 
 .Work h2{
@@ -349,17 +299,10 @@ opacity:1;
     border-radius:8px;
     width:35%;
     margin:30px 30px;
-    
-    /* background: rgb(145,105,236);
-background: linear-gradient(45deg, rgba(145,105,236,1) 5%, rgba(128,122,226,1) 28%, rgba(106,149,215,1) 46%, rgba(82,173,201,1) 54%, rgba(68,189,193,1) 72%, rgba(84,84,123,1) 100%); */
-
-/* background: linear-gradient(135deg, #000000, #00008B, #8B4513); */   
-    
 }
 
 
-
-
+/* Specifying Card image background color to linear gradient */
 
 .Card.a .image{
     
@@ -376,8 +319,6 @@ background: linear-gradient(45deg, rgba(145,105,236,1) 5%, rgba(128,122,226,1) 2
 
 .Card.c .image{
  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
-
-
 }
 
 
@@ -390,11 +331,7 @@ background: linear-gradient(45deg, rgba(145,105,236,1) 5%, rgba(128,122,226,1) 2
     .card-box{
         display:flex;
         flex-wrap: wrap;
-        justify-content:center;
-
-        /* padding:40px 40px;   */
-
-        
+        justify-content:center;  
     }
     
 
@@ -426,11 +363,8 @@ border-radius: 8px;
  transform: scale(1.15);
 }
     
-
-
     .moreProjects{
         text-align: center;
-        /* margin-top: 40px; */
     }
 
     .moreProjects a{
@@ -441,18 +375,15 @@ border-radius: 8px;
         font-size: 20px;
         font-family:"Inter";
         font-weight:500;
-    
-        
-
     }
 
     .moreProjects a:hover{
-border:7px solid lightgrey;
-border-radius:10px;
-background-color:lightgrey;
-/* margin:60px 60px; */
-font-family: "Lato";
-transition: smooth 0.3s ease;
+       border:7px solid lightgrey;
+       border-radius:10px;
+       background-color:lightgrey;
+        /* margin:60px 60px; */
+        font-family: "Lato";
+        transition: smooth 0.3s ease;
     }
 
     #BenefitsSection{
@@ -461,10 +392,10 @@ transition: smooth 0.3s ease;
 
     /* What my clients are saying */
     .Clients{
-text-align: center;
-margin-top:10rem;
-margin-bottom:3rem;
-/* font-size: 30px; */
+       text-align: center;
+       margin-top:10rem;
+       margin-bottom:3rem;
+
     }
 
     .Clients h2{
@@ -506,41 +437,38 @@ background-color: white;
     }
 
   .comments{
- border:2px solid transparent;
+border:2px solid transparent;
 border-radius: 8px;
 width:82px;
 padding-bottom: 24px;
 /* margin:20px; */
-
     }
 
     .comments img{
-        width:100%;
-        /* height:80px; */
-        border:2px solid transparent;
-        border-radius: 8px;
-        /* padding:0 0 20px 0px; */
+    width:100%;
+    /* height:80px; */
+    border:2px solid transparent;
+    border-radius: 8px;
+    /* padding:0 0 20px 0px; */
 
     }
 
     .comments-a p{
         /* margin:30px; */
         font-family: "sans-serif", serif;
-font-size: 23px;
-font-weight :500;
-letter-spacing :-0.20px;
-line-height: 30px;
-/* margin-bottom: 50px; */
+        font-size: 23px;
+        font-weight :500;
+        letter-spacing :-0.20px;
+        line-height: 30px;
+        /* margin-bottom: 50px; */
 
     }
 
 
 
     .Foott{ 
-     
      font-family: "poppins";
      line-height: 2.4px;
-    
     }
 
 
@@ -548,8 +476,7 @@ line-height: 30px;
         font-size: 18px;
         font-weight :500;
         line-height :24px;
-        text-size-adjust :100%;
-        
+        text-size-adjust :100%;  
     }
 
 .Foott p{
@@ -559,8 +486,6 @@ font-weight :500;
 line-height :4px;
 text-size-adjust :100%;
 unicode-bidi :isolate;
-
-
 }
 
 .logoo{
@@ -569,7 +494,6 @@ unicode-bidi :isolate;
     justify-content:space-between;
     padding:30px 0px;
 }
-
 
 
 .foot-grp1{
@@ -588,7 +512,6 @@ background: linear-gradient(45deg, rgba(179,52,113,1) 0%, rgba(48,50,51,1) 0%, r
     color: rgb(236, 237, 238);
     text-align: center;
     font-size: 60px;
-
 }
 
 
@@ -629,7 +552,6 @@ background: linear-gradient(45deg, rgba(179,52,113,1) 0%, rgba(48,50,51,1) 0%, r
 /* font-size:36px; */
 font-weight: 400;
 color: rgb(236, 237, 238);
-
 }
 
 
@@ -667,9 +589,7 @@ margin-bottom: 30px;
     gap:30px;
     width:96%;
     margin: auto;
-    padding:46px;
-    
-    
+    padding:46px; 
 }
 
 
@@ -1254,7 +1174,6 @@ font-size: 8px;
         }
 
 
-        /* underlined project request not working */
          i .fa-solid .fa-greater-than{
             list-style-type: none;
             text-decoration: none;
@@ -1264,7 +1183,7 @@ font-size: 8px;
         
         .nav-link .when_hovered{
         padding:none !important;
-        font-size: 12px !important;t
+        font-size: 12px !important;
         font-weight: 400;
         }
 
@@ -1394,16 +1313,13 @@ a .Prp{
 .slider{
     overflow: hidden;
     padding:15px 0;
-    /* margin:0 auto; */
-    /* background-color:lavender; */
-    padding-top:40px;
     background-color: white;
     white-space: nowrap;
     position:relative;
  
 
 /* before after is not used properly since we havent used  */
-.slider:before ,
+/* .slider:before ,
 .slider:after 
 {
     position:absolute;
@@ -1414,13 +1330,13 @@ a .Prp{
   background:white;
     content:"My Skills";
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally 
+    align-items: center; 
     color:black;
     font-size: 20px;
     font-weight: 500;
     z-index: 2;
-}
+} */
 
 .slider:before{
    left:0;
