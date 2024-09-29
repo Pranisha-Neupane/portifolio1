@@ -746,6 +746,7 @@ text-decoration: none;
 
 .bottomcard{
     background-color:#e5e4e2;
+    padding-top: 30px;
 
 }
 
@@ -764,7 +765,7 @@ transition-property:box-shadow;
     border-radius:10px;
     margin-top:30px;
     width:40%;
-    margin: 3rem auto;
+    margin: 0 auto;
     /* height:13rem; */
     padding: 20px;
     display:flex;
