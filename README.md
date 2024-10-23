@@ -13,7 +13,7 @@ This is a personal portfolio website showcasing my skills, projects, and experie
 - HTML: For structuring the webpage
 - CSS: For styling the webpage (including animations and transitions)
 - JavaScript: For any interactive components 
-- Bootstrap: For responsive design (if used)
+- Bootstrap: For responsive design 
 
 ## Getting Started
 
